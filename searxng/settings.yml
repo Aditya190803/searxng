@@ -10,6 +10,7 @@ general:
 server:
   bind_address: "0.0.0.0"
   port: 8080
+  secret_key: "ultrasecretkey"  # Is overwritten by ${SEARXNG_SECRET}
   limiter: false
   image_proxy: false
   method: "GET"
