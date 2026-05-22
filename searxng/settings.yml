@@ -1,0 +1,32 @@
+use_default_settings: true
+
+general:
+  instance_name: "SearXNG"
+  debug: false
+  privacypolicy_url: false
+  contact_url: false
+  enable_metrics: false
+
+server:
+  bind_address: "0.0.0.0"
+  port: 8080
+  limiter: false
+  image_proxy: false
+  method: "GET"
+  default_http_headers:
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: "1; mode=block"
+    X-Frame-Options: DENY
+    Referrer-Policy: no-referrer
+
+search:
+  safe_search: 0
+  autocomplete: ""
+  formats:
+    - html
+    - json
+
+ui:
+  static_use_hash: true
+  default_theme: simple
+  default_locale: ""
